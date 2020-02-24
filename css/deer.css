@@ -1,0 +1,30 @@
+html {
+    background-color: black;
+}
+
+  
+  @keyframes glow{
+    to {
+      /* box-shadow: 0px 0px 30px 20px rgb(225, 226, 230); */
+      -webkit-filter: drop-shadow(15px 15px 0 dark blue)
+      drop-shadow(-15px -15px 0 blue);
+      filter: drop-shadow(15px 15px 0 white) 
+       drop-shadow(-15px -15px 0 white) brightness(0) invert(1);;
+transform: unset;
+
+    }
+  }
+/* 
+  #deerHolder {
+      margin-left: 100px;
+      margin-top: 50px;
+      width: 100%
+  } */
+
+
+  img {
+    animation: glow 1.5s linear infinite alternate;
+    }
+  
+  
+

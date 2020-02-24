@@ -1,0 +1,23 @@
+{
+  "name": "why_so_sirius",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SianCulligan/why_so_sirius.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SianCulligan/why_so_sirius/issues"
+  },
+  "homepage": "https://github.com/SianCulligan/why_so_sirius#readme",
+  "dependencies": {
+    "superagent": "^5.2.2"
+  }
+}
