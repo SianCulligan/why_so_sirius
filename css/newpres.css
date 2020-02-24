@@ -1,0 +1,223 @@
+html {
+   margin: 0px;
+   position: absolute;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(#fc0101, #000000);
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-position: center;
+  }
+
+  #harryGlasses {
+    position: fixed; 
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+#about {
+    grid-area: mainOne;
+    margin-top: -50px;
+  }
+#problem{
+    grid-area: mainTwo;
+    margin-top: -50px;
+  }
+#strength {
+    grid-area: mainThree;
+    margin-left: 100px;
+  }
+#ops, #luna {
+    grid-area: mainFour;
+    margin-left: -100px;
+  }
+#demo {
+    grid-area: mainFive;
+    margin-bottom: -50px;
+  }
+
+  #question {
+    grid-area: mainSix;    
+    margin-bottom: -50px;
+  }
+
+
+  
+  .container {
+    position: fixed; 
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: grid;
+    grid-template-columns: 0px 300px 300px 0px;
+    grid-template-rows: auto;
+    justify-items: center;
+    justify-content: center;	
+    grid-template-areas: 
+      "header header header header"
+      ". mainOne mainTwo ."
+      "mainThree . . mainFour"
+      ". mainFive mainSix .";
+  }
+
+
+
+  .card {
+      width: 100px;
+      height: 100px;
+      font-size: 20px;
+     font-weight: bold;
+     color: darkgoldenrod;
+     background-color: black;
+     border-radius: 50%;
+     line-height: 100px;
+     text-align: center;
+     align-items: center;
+
+  }
+
+  #ops {
+     font-size: 15px;
+  }
+
+  /* #luna{
+      width: 150px;
+      height: auto;
+      z-index: -1;
+  } */
+
+  .card:hover #luna {
+      display: block;
+      /* transition: 0.8s; 
+      position: relative; 
+      top: -50px; */
+  }
+
+#luna {
+    display: none;
+    /* position: absolute;
+    width: 150px;
+    height: auto;
+    z-index: -1; */
+
+  }
+
+#ops:hover{
+  filter: grayscale();
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+canvas {
+  @include abs-pos;
+}
+
+#canvas3 {
+  z-index: 5;
+}
+
+#canvas2 {
+  z-index: 10;
+}
+
+#canvas1 {
+  z-index: 100;
+}
+
+$color1: rgba(34,
+34,
+34,
+.9);
+$color2: rgba(59,
+59,
+59,
+.3);
+.thunder {
+  @at-root {
+    @-webkit-keyframes thunder-bg {
+      0% {
+        background-color: $color1;
+      }
+      9% {
+        background-color: $color1;
+      }
+      10% {
+        background-color: $color2;
+      }
+      10.5% {
+        background-color: $color1;
+      }
+      80% {
+        background-color: $color1;
+      }
+      82% {
+        background-color: $color2;
+      }
+      83% {
+        background-color: $color1;
+      }
+      83.5% {
+        background-color: $color2;
+      }
+      100% {
+        background-color: $color1;
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+  this will hide a div unitl hover */
+  .hoverWrapper:hover #hoverShow1 {
+    display: block;
+   }
+   
+   .hoverWrapper #hoverShow1 {
+    display: none;
+    position: absolute;
+    background-color: #ff0000;
+    width: 250px;
+    height: 250px;
+    left: 200px;
+    top: 100px;
+   }
